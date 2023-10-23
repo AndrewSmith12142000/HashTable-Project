@@ -22,7 +22,9 @@ public:
     void printTable();
 
 private:
-
+	Node* getHead() const;
+    LinkedList table[HASHTABLESIZE]; 
+    int hash(int id);
 };
 
 #endif /* HASHTABLE_H */
