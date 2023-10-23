@@ -31,3 +31,14 @@ bool HashTable::insertEntry(int id, std::string* data) {
 
     return true;
 }
+
+string HashTable::getData(int id) {
+    int index = hash(id);
+    Data entry;
+
+    if (table[index].getNode(id, &entry)) {
+        return entry.data;
+    } else {
+        return ""; 
+    }
+}
