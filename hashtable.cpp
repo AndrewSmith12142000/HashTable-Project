@@ -58,3 +58,15 @@ int HashTable::getCount() {
     }
     return count;
 }
+
+void HashTable::printTable() {
+    for (int i = 0; i < HASHTABLESIZE; i++) {
+        std::cout << "Entry " << i + 1 << ": ";
+        if (table[i].getCount() == 0) {
+            std::cout << "EMPTY";
+        } else {
+            table[i].printList();
+        }
+        std::cout << std::endl;
+    }
+}
