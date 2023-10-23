@@ -70,3 +70,8 @@ void HashTable::printTable() {
         std::cout << std::endl;
     }
 }
+
+
+int HashTable::hash(int id) {
+    return id % HASHTABLESIZE;
+}
