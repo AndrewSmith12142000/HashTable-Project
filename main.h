@@ -2,7 +2,7 @@
  Name: Andrew Smith
  Coding 06
  Purpose: This file support the main.cpp test file
- File: functions.h
+ File: main.h
  *
  */
 
