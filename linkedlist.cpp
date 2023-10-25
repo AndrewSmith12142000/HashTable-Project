@@ -1,6 +1,6 @@
 /*
  Name: Andrew Smith
- Coding 05
+ Coding 06
  Purpose: This file represents the linked list
  File: linkedlist.cpp
  *
