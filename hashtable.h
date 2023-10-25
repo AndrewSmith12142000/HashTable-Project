@@ -2,7 +2,7 @@
  Name: Andrew Smith
  Coding 06
  Purpose: This file support the file to hashtable.cpp
- File: functions.h
+ File: hashtable.h
  *
  */
  
