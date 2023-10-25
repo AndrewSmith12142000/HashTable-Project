@@ -1,6 +1,6 @@
 /*
  Name: Andrew Smith
- Coding 05
+ Coding 06
  Purpose: This file is for the includes and class LinkedList
  File: functions.h
  *
