@@ -1,5 +1,9 @@
-/* 
- * your comment header here
+/*
+ Name: Andrew Smith
+ Coding 06
+ Purpose: This file test for hashtables
+ File: main.h
+ *
  */
 
 #include "main.h"
