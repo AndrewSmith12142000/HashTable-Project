@@ -2,7 +2,7 @@
  Name: Andrew Smith
  Coding 06
  Purpose: This file test for hashtables
- File: main.h
+ File: main.cpp
  *
  */
 
