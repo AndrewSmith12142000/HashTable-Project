@@ -65,6 +65,21 @@ int main() {
     hashTable.printTable();
 
  
+    cout << "\n---------------Inserting Test Data-------------------\n";
+    for (int i = 0; i < testdatasize; i++) {
+        cout << "Inserting " << ids[i] << " : " << strs[i];
+        if (hashTable.insertEntry(ids[i], &strs[i])) {
+            cout << " Insert success!";
+        } else {
+            cout << " Insert failed.";
+        }
+        cout << endl;
+    }
+
     
+    cout << "\n-------------Hash Table Output After Inserting----------------------\n";
+    hashTable.printTable();
+
+
     return 0;
 }
