@@ -1,5 +1,9 @@
-/* 
- * your comment header here
+/*
+ Name: Andrew Smith
+ Coding 06
+ Purpose: Create the hashtable for linkedlist
+ File: hashtable.cpp
+ *
  */
  
 #include "hashtable.h"
@@ -70,7 +74,6 @@ void HashTable::printTable() {
         std::cout << std::endl;
     }
 }
-
 
 int HashTable::hash(int id) {
     return id % HASHTABLESIZE;
