@@ -1,5 +1,9 @@
-/* 
- * your comment header here
+/*
+ Name: Andrew Smith
+ Coding 06
+ Purpose: This file support the file to hashtable.cpp
+ File: functions.h
+ *
  */
  
 #ifndef HASHTABLE_H
