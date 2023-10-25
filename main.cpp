@@ -3,6 +3,7 @@
  */
 
 #include "main.h"
+#include "hashtable.h"
 
 int main() {
     //seed the rand function
@@ -57,9 +58,13 @@ int main() {
     // do whatever it takes to full test your object and prove it
     // is robust and can handle all use cases.
 
-    
-    
-    
+       cout << "\n------------ Testing Empty Hash Table ------------\n";
+
+    HashTable hashTable;
+    cout << "\nHash Table Count: " << hashTable.getCount() << "\n";
+    hashTable.printTable();
+
+ 
     
     return 0;
 }
