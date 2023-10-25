@@ -1,5 +1,9 @@
-/* 
- * your comment header here
+/*
+ Name: Andrew Smith
+ Coding 06
+ Purpose: This file support the main.cpp test file
+ File: functions.h
+ *
  */
 
 #ifndef MAIN_H
