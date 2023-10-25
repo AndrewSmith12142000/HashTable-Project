@@ -93,7 +93,35 @@ int main() {
     hashTable.printTable();
 
 
-  
+    cout << "\n-----Retrieving Data from the Table----------\n";
+    cout << "\nRetrieving data for ID " << ids[3] << ": ";
+    cout << hashTable.getData(ids[3]) << endl;
+
+    cout << "\nRetrieving data for ID " << ids[5] << ": ";
+    cout << hashTable.getData(ids[5]) << endl;
+
+    
+    cout << "\n-------Test Boundary---------\n";
+    int invalidId = -10;
+    cout << "Inserting invalid ID " << invalidId << ": ";
+    if (hashTable.insertEntry(invalidId, &strs[0])) {
+        cout << "Insertion successful (unexpected)!";
+    } else {
+        cout << "Insertion failed (expected).";
+    }
+    cout << endl;
+
+    cout << "Inserting duplicate ID " << ids[testdatasize-2] << ": ";
+    if (hashTable.insertEntry(ids[testdatasize-2], &strs[testdatasize-2])) {
+        cout << "Insertion successful (unexpected)!";
+    } else {
+        cout << "Insertion failed (expected).";
+    }
+    cout << endl;
+
+
+    cout << "\n-------------Final Hash Table------------\n";
+    hashTable.printTable();
    
     return 0;
 }
