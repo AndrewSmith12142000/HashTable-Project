@@ -80,6 +80,20 @@ int main() {
     cout << "\n-------------Hash Table Output After Inserting----------------------\n";
     hashTable.printTable();
 
+    
+    cout << "\n-------------Testing to Remove Random Entries----------------------\n";
+    int removeidOne = ids[testdatasize / 2]; 
+    int removeidTwo = ids[testdatasize / 4];
+    cout << "\nRemoving IDs: " << removeidOne << " and " << removeidTwo << endl;
+    hashTable.removeEntry(removeidOne);
+    hashTable.removeEntry(removeidTwo);
 
+    
+    cout << "\n----------Hash Table Output After Removal----------\n";
+    hashTable.printTable();
+
+
+  
+   
     return 0;
 }
