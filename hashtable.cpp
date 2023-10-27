@@ -35,13 +35,15 @@ bool HashTable::insertEntry(int id, std::string* data) {
 string HashTable::getData(int id) {
     int index = hash(id);
     Data entry;
+    string result = "";
 
     if (table[index].getNode(id, &entry)) {
-        return entry.data;
-    } else {
-        return ""; 
+        result = entry.data;
     }
+
+    return result;
 }
+
 
 bool HashTable::removeEntry(int id) {
     int index = hash(id);
