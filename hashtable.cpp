@@ -47,10 +47,13 @@ string HashTable::getData(int id) {
 
 bool HashTable::removeEntry(int id) {
     int index = hash(id);
+    bool success = false;
+
     if (table[index].deleteNode(id)) {
-        return true;
+        success = true;
     }
-    return false;
+
+    return success;
 }
 
 int HashTable::getCount() {
