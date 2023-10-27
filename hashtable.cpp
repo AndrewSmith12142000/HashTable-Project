@@ -22,19 +22,15 @@ bool HashTable::insertEntry(int id, std::string* data) {
     if (id <= 0 || data == nullptr || data->empty()) {
         return false; 
     }
-
     int index = hash(id);
     if (table[index].exists(id)) {
         return false; 
     }
-
-    Data entry;
-    entry.id = id;
-    entry.data = *data;
-    table[index].addNode(id, &entry.data);
+    table[index].addNode(id, data);
 
     return true;
 }
+
 
 string HashTable::getData(int id) {
     int index = hash(id);
