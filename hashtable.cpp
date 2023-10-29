@@ -22,7 +22,7 @@ bool HashTable::insertEntry(int id, std::string* data) {
     if (id > 0 && data && !data->empty()) {
         int index = hash(id);
         if (table[index].addNode(id, data)) {
-            ++count; // Increment count when an entry is added
+            ++count;
             result = true;
         }
     }
