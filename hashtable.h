@@ -19,15 +19,16 @@ public:
     HashTable();
     ~HashTable();
 
-    bool insertEntry(int id, std::string* data);
-    std::string getData(int id);
-    bool removeEntry(int id);
+    bool insertEntry(int, std::string*);
+	string getData(int);
+	bool removeEntry(int);
     int getCount();
     void printTable();
 
 private:
     LinkedList table[HASHTABLESIZE]; 
-    int hash(int id);
+    int hash(int);
+    int count;
 };
 
 #endif /* HASHTABLE_H */
