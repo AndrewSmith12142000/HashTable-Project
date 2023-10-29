@@ -18,7 +18,6 @@ HashTable::~HashTable() {
 
 bool HashTable::insertEntry(int id, std::string* data) {
     bool result = false;
-
     if (id > 0 && data && !data->empty()) {
         int index = hash(id);
         if (table[index].addNode(id, data)) {
@@ -26,7 +25,6 @@ bool HashTable::insertEntry(int id, std::string* data) {
             result = true;
         }
     }
-
     return result;
 }
 
@@ -39,7 +37,6 @@ string HashTable::getData(int id) {
     if (table[index].getNode(id, &entry)) {
         result = entry.data;
     }
-
     return result;
 }
 
@@ -51,7 +48,6 @@ bool HashTable::removeEntry(int id) {
     if (table[index].deleteNode(id)) {
         success = true;
     }
-
     return success;
 }
 
