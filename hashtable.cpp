@@ -8,7 +8,7 @@
  
 #include "hashtable.h"
 
-HashTable::HashTable() {
+HashTable::HashTable() : count(0) {
     
 }
 
@@ -19,17 +19,16 @@ HashTable::~HashTable() {
 bool HashTable::insertEntry(int id, std::string* data) {
     bool result = false;
 
-    if (id > 0 && data != nullptr && !data->empty()) {
+    if (id > 0 && data && !data->empty()) {
         int index = hash(id);
-        if (!table[index].exists(id)) {
-            table[index].addNode(id, data);
+        if (table[index].addNode(id, data)) {
+            ++count; // Increment count when an entry is added
             result = true;
         }
     }
-    
+
     return result;
 }
-
 
 
 string HashTable::getData(int id) {
